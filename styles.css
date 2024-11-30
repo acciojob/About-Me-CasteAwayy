@@ -1,1 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  position: relative;
+  /* border: 2px solid black; */
+  padding: 5px 10px;
+
+  display: flex;
+  gap: 5px;
+}
+.container > * {
+  flex-shrink: 0;
+  width: 50%;
+}
+
+.left-side {
+  position: relative;
+
+  /* border: 1px solid black;   */
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.left-side .profile-section {
+  position: relative;
+
+  /* border: 1px solid yellow; */
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding: 10px;
+}
+
+.left-side .profile_image {
+  width: 20%;
+}
+
+.profile_image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.seperator {
+  position: relative;
+  width: 90%;
+  height: 1px;
+  margin-top: 60px;
+  margin-left: 36px;
+  background-color: rgba(53, 37, 37, 0.475);
+}
+
+.skills-section {
+  width: 100%;
+  padding: 0 10px;
+}
+.skills-section > p {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+.skills {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.221);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skills progress {
+  width: 100%;
+  height: 10px;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: white;
+}
+progress::-webkit-progress-value {
+  background-color: blue;
+}
+
+.skill-percentage {
+  width: 100%;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/*                                          right side                                    */
+.right-side h1 {
+  position: relative;
+  /* padding-bottom: 10px; */
+  margin-bottom: 15px;
+}
+.right-side h1::after {
+  position: absolute;
+  content: "";
+  width: 15%;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: blue;
+}
+
+.right-side p {
+  font-weight: 200;
+}
